@@ -31,6 +31,22 @@ p,span{
   color: var(--secondary-text);
 }
 
+
+.icon-sm {
+  font-size: 1.25rem;
+  color: #ecf0f1;
+  padding: 0.4rem 0.65rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
+  background-color: var(--secondary-text);
+}
+.icon-sm:hover {
+  transition: 0.8s;
+  color: white;
+  background-color: var(--primary-text);
+  cursor: pointer;
+}
+
 /*navbar*/
 .my__navbar--brand{
   font-size: 1.8rem;
@@ -73,9 +89,6 @@ p,span{
   color: var(--primary-text);
 }
 
-.my__hero--icons{
-  font-size: 1.5rem;
-}
 
 
 /*About*/
@@ -107,7 +120,20 @@ p,span{
 .experience i:hover{
   color: var(--primary-text);
   cursor:pointer;
-  transition: 0.5s;
+  transition: 0.8s;
+}
+
+/*Projects*/
+.projects__box--card {
+  border: 1px solid var(--secondary-text);
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+/*Footer*/
+.footer__text{
+  float: right;
+  text-align: right;
 }
 
 
