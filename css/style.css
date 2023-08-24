@@ -2,8 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 :root{
-  --primary-text:#000000;
-  --secondary-text:#555555;
+  --primary-text:#2d333b;
+  --secondary-text:#757e7d;
+  --alternative-text:#2d333b;
+  --enfasis-text:#6c63fe;
+  --background-body:white; 
 }
 
 * {
@@ -11,12 +14,13 @@
   padding: 0;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-}
-
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-body);
 }
 
 h1,h2,h4,h5,h6{
@@ -31,6 +35,18 @@ p,span{
   color: var(--secondary-text);
 }
 
+.img-box img{
+  transition: 0.5s all ease-in-out;
+}
+
+.img-box img:hover{
+  transform: scale(1.1);
+}
+
+.img-box{
+  overflow: hidden;
+  width: 100%;
+}
 
 .icon-sm {
   font-size: 1.25rem;
@@ -40,6 +56,7 @@ p,span{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
   background-color: var(--secondary-text);
 }
+
 .icon-sm:hover {
   transition: 0.8s;
   color: white;
@@ -57,30 +74,8 @@ p,span{
 }
 
 /*hero*/
-
 .my__hero{
-  margin: 5rem 0;
-}
-
-.my__hero--image{
-  display: flex;
-  justify-content: center;
-  margin-top: 0.5rem;
-  height: 20rem;
-  width: auto;
-} 
-
-.my__hero--image img{
-  padding: 0.1rem;
-  border: 1px solid var(--secondary-text);
-}
-
-.my__hero--content{
-  margin-top: 0.5rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
+  padding-top: 5rem;
 }
 
 .my__hero--text{
@@ -88,8 +83,6 @@ p,span{
   font-weight: bold;
   color: var(--primary-text);
 }
-
-
 
 /*About*/
 
