@@ -14,7 +14,7 @@
   <body class="body container">
 
     <!--navbar-->
-    <nav class="my_navbar navbar navbar-expand-lg mx-lg-5" data-aos="fade-down">
+    <nav class="my_navbar navbar navbar-expand-lg mx-lg-5 " data-aos="fade-down">
       <div class="container-fluid">
         <a class="navbar-brand my__navbar--brand" href="#">JPinedaDev</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
@@ -25,19 +25,17 @@
         <div class="collapse navbar-collapse d-flex-lg justify-content-lg-end" 
           id="navbarNav">
            <ul class="navbar-nav my__nav--items">
-            <li class="nav-item ">
-              <a class="nav-link" href="#">About</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Experience</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
           </ul>
+          <button onclick="myFunction()" class="dark-mode-button"><i class="bi bi-brightness-low-fill"></i></button>
         </div>
       </div>
     </nav>
@@ -65,22 +63,25 @@
 					  <i class="bi bi-github  icon-sm"></i></a>
 				  <a href="@mailto:jpinedadeveloper@gmail.com">
 					  <i class="bi bi-envelope-fill icon-sm"></i></a>
+				  <a href="https://twitter.com/jpinedadev">
+					  <i class="bi bi-twitter icon-sm"></i></a>
+
         </div>
       </div>
     </main>
 
     <!--about-->
-    <div class="about  m-lg-5 ">
+    <div class="about" id="about">
 
-      <div class="about--head text-center my-5">
+      <div class="about--head text-center">
         <p>Get To Know More <i class="bi bi-caret-down-fill"></i></p>
-        <h1>About Me</h1>       
+        <h1>About Me</h1><br>       
       </div>
 
       <div class="about__box row gap-4">
 
         <div class="about__box--img col-lg-4" data-aos="fade-right">
-          <img src="images/about2.png" class="img-fluid" alt="about image">
+          <img src="images/about4.svg" class="img-fluid" alt="about image">
         </div>
 
         <div class="about__box--card col-lg mt-3" data-aos="fade-left">
@@ -115,15 +116,15 @@
     </div>
 
     <!--experience-->
-    <div class="experience m-lg-5 ">
+    <div class="skills m-lg-5" id="skills">
       
-      <div class="about--head text-center my-5">
+      <div class="skills--head text-center">
         <p>Explore My <i class="bi bi-caret-down-fill"></i></p>
         <h1>Experience</h1>       
       </div>
 
-      <div class="experience__box">
-        <div class="experience__box--icons text-center">
+      <div class="skills__box">
+        <div class="skills__box--icons text-center">
           <i class="fa-brands fa-python" data-aos="flip-down" data-aos-delay="300"
             data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Python" ></i>
           <i class="fa-brands fa-square-git" data-aos="flip-down" data-aos-delay="400"
@@ -147,7 +148,7 @@
     </div>
 
     <!--projects-->
-    <div class="projects  m-lg-5 mx-3">
+    <div class="projects  m-lg-5 mx-3" id="projects">
       <div class="text-center">
         <p>Browse My Recent<i class="bi bi-caret-down-fill"></i></p>
         <h1>Projects</h1>       
@@ -192,16 +193,18 @@
     </div>
 
     <!--Footer-->
-    <footer class="footer row m-4 ">
-			<div class="footer__icons col">
+    <footer class="footer row m-4">
+			<div class="footer__icons col-md">
 				<a href="https://www.linkedin.com/in/jpinedadev/" target="_blank">
 				<i class="bi bi-linkedin  icon-sm"></i></a>
 				<a href="https://github.com/jpinedadev" target="_blank">
 					<i class="bi bi-github  icon-sm"></i></a>
 				<a href="@mailto:jpinedadeveloper@gmail.com">
 					<i class="bi bi-envelope-fill icon-sm"></i></a>
+				<a href="https://twitter.com/jpinedadev">
+					<i class="bi bi-twitter icon-sm"></i></a>
 			</div>
-			<div class="footer__text col">
+			<div class="footer__text col-md">
 				<span>© 
 					<script>
 						document.write(new Date().getFullYear())
@@ -210,9 +213,6 @@
 				</span>
 			</div>
 		</footer>
-
-
-
 
   </body>
   <script src="assets/bootstrap-5.3.1/js/bootstrap.bundle.min.js"></script>
@@ -244,4 +244,12 @@
     backgroundAlpha: 0.00
     })
   </script>
+
+  <script>
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+  </script>
+
 </html>

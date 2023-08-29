@@ -5,8 +5,15 @@
   --primary-text:#2d333b;
   --secondary-text:#757e7d;
   --alternative-text:#2d333b;
-  --enfasis-text:#6c63fe;
+  --enfasis-text:#8a4ca8;
   --background-body:white; 
+}
+
+.dark-mode{
+  --primary-text:#ffffff;
+  --secondary-text:#a9bac7;
+  --alternative-text:#2d333b;
+  --background-body:#1c2128; 
 }
 
 * {
@@ -59,7 +66,7 @@ p,span{
 
 .icon-sm:hover {
   transition: 0.8s;
-  color: white;
+  color: var(--secondary-text);
   background-color: var(--primary-text);
   cursor: pointer;
 }
@@ -67,11 +74,42 @@ p,span{
 /*navbar*/
 .my__navbar--brand{
   font-size: 1.8rem;
+  color: var(--primary-text);
+}
+
+.my__navbar--brand:hover{
+  color: var(--enfasis-text);
 }
 
 .my__nav--items{
   font-size: 1.3rem;
 }
+
+.nav-link{
+  color: var(--primary-text);
+}
+
+.nav-link:hover{
+  color: var(--enfasis-text);
+  border-bottom: 1px solid var(--enfasis-text);
+}
+
+.dark-mode-button{
+  background-color: transparent;
+  border: none;
+  color: var(--primary-text);
+  font-size: 1.8rem;
+}
+
+.dark-mode-button:hover{
+  color: var(--enfasis-text);
+}
+
+
+.navbar-toggler{
+  background-color: var(--enfasis-text);
+}
+
 
 /*hero*/
 .my__hero{
@@ -84,7 +122,13 @@ p,span{
   color: var(--primary-text);
 }
 
+
+
 /*About*/
+.about{
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
 
 .about__box--card i{
   font-size: 2rem;
@@ -97,33 +141,50 @@ p,span{
   text-align: center;
 }
 
-/*Experience*/
-.experience__box{
+/*Skills*/
+.skills{
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
+
+.skills__box{
+  margin-top: 5rem;
   border: 1px solid var(--secondary-text);
   border-radius: 1rem;
   padding: 2rem;
 }
 
-.experience__box i{
+.skills__box i{
   font-size: 5rem;
   color: var(--secondary-text);
   margin: 0.8rem;
 }
 
-.experience i:hover{
+.skills i:hover{
   color: var(--primary-text);
   cursor:pointer;
   transition: 0.8s;
 }
 
 /*Projects*/
+.projects{
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
+
 .projects__box--card {
+  margin-top: 2rem;
   border: 1px solid var(--secondary-text);
   border-radius: 1rem;
   padding: 0.5rem;
 }
 
 /*Footer*/
+.footer{
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
+
 .footer__text{
   float: right;
   text-align: right;
